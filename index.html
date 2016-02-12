@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Website Under Construction</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+    <div class="jumbotron fullHeight partPad">
+    <h1 class="fadeIn" style="font-size: 102px;">Welcome!</h1>
+    <br>
+    <img src="./img/exclamationCircle.png" class="fadeIn one partPad14"/>
+    <br>
+    <br>
+    <h3 class="fadeIn two partPad14" style="font-size: 42px;">This website is under construction.<br> <br>Please check back soon!</h1>
+        
+    </div>
+</body>
+    <footer>
+        <h6 class="fadeIn three">&copy; Another website by <a href="http://www.noahpaladino.com">Noah Paladino</a></h6>
+    </footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+   function getContentHeight(){
+        if($(window).height() > 700)
+        {
+            return $(window).height()-60;
+        } else {
+            return 640;
+        }
+    }
+    $(".fullHeight").css("height", getContentHeight());
+    $(".partPad").css("padding-top", getContentHeight()/10);
+    $(".partPad14").css("padding-top", getContentHeight()/14);
+</script>
+</html>
